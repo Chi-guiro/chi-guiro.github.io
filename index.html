@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página especial </title>
+    <link rel="icon" href="https://i.imgur.com/H1obMOZ.png" type="image/png">
+  
+   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&amp;display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&amp;display=swap" rel="stylesheet">
+  
+  
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.cdnfonts.com/css/gothic-ultra-ot" rel="stylesheet">
+
+
+
+    <style>
+        body {
+            font-family: 'Silkscreen', sans-serif;
+            background-color: #F0E7B2;
+            color: #333;
+            text-align: center;
+        
+          
+        }
+        h1 {
+          color: #ff69b3; font-family: 'Pixelify Sans';
+            margin-top: 5px;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px rgba(1, 0, 9, 5);
+            padding: 0 30px;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 19.2px;
+            padding: 0 30px;
+        }
+        .foto, .imagen-triste {
+            width: 300px;
+            border-radius: 15px;
+            display: none;
+            position: relative;
+            margin: 20px auto; /* Centrar la imagen */
+        }
+        .gif {
+            width: 200px; /* Tamaño del GIF */
+            height: 200px; /* Hacer el GIF cuadrado */
+            border-radius: 15px; /* Bordes curvos para el GIF */
+            margin: 20px auto; /* Espacio superior e inferior, centrado */
+        }
+        .boton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s; /* Transición suave */
+        }
+        .boton:hover {
+            background-color: #ff1493; /* Color al pasar el ratón */
+        }
+        .respuesta, .mensaje-triste, .confirmacion {
+            display: none;
+        }
+        .mensaje-triste {
+            color: #ff4500;
+            font-size: 1.2em;
+        }
+        .spotify-iframe {
+            display: none; /* Ocultar el iframe por defecto */
+            margin: 20px auto; /* Centrar el iframe */
+            width: 300px;
+            height: 380px; /* Ajusta la altura según sea necesario */
+            border-radius: 15px; /* Bordes curvos para el iframe */
+        }
+        .cancion-mensaje {
+            display: none; /* Ocultar mensaje por defecto */
+            margin-top: 20px;
+            color: #333; /* Color del mensaje */
+            font-weight: bold; /* Negrita */
+        }
+        .agradecimiento {
+            font-size: 1.2em;
+            color: #ff69b4;
+            margin-top: 10px;
+        }
+        .letras {
+            font-style: italic; /* Cursiva */
+            margin: 20px; /* Espacio alrededor */
+            color: #555; /* Color de las letras */
+            font-size: 1.1em; /* Tamaño de fuente */
+        }
+        .musica {
+            font-size: 1.5em; /* Tamaño para los símbolos de música */
+            color: #ff69b4; /* Color para los símbolos de música */
+        }
+    </style>
+
+
+<style type="text/css">
+.grande { font-size: 60px; }
+</style>
+<script>
+// Escribir aqui el código Javascript
+</script>
+<style type="text/css">
+.grande { font-size: 60px; }
+</style>
+<script>
+// Escribir aqui el código Javascript
+</script>
+<style type="text/css">
+.grande { font-size: 60px; }
+</style>
+<script>
+// Escribir aqui el código Javascript
+</script>
+<style type="text/css">
+.grande { font-size: 60px; }
+</style>
+<script>
+// Escribir aqui el código Javascript
+</script>
+</head>
+<body>
+  
+  <br>Por: Elkin &nbsp;&nbsp; Para: Juan Pablo
+    <h1>Nuestros primeros tres meses juntos</h1>
+    <img src="https://i.imgur.com/ihPOmMZ.gif" alt="GIF divertido" class="gif" style="width: 254px; height: 300px;">
+    <p>Gracias por hacer mi vida más bonita, mi <span style="color: #ff1493; font-weight: bold;">PRINCIPE</span>.</p><br>
+  
+  <link rel="preload" href="https://imgur.com/yEPErUz.png" as="image">  
+  
+    <p id="pregunta"><span style="font-style: italic;">¿Estás listo para un recorrido por nuestro amor?</span></p>
+<button class="boton" id="boton-si">Yes</button>
+<button class="boton" id="boton-no">No</button>
+
+<style>
+    #pregunta {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .boton {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 14px; /* Tamaño de letra para el texto del botón */
+        padding: 10px 20px;
+        border: 2px solid black;
+        cursor: pointer;
+        width: 100px;
+        margin: 10px;
+        border-radius: 0; /* Hace el botón cuadrado */
+        transition: transform 0.3s ease; /* Transición suave para el efecto */
+    }
+
+    #boton-si, #confirmar-si {
+        background-color: green;
+        color: white;
+    }
+
+    #boton-no {
+        background-color: red;
+        color: white;
+    }
+
+    .boton:hover {
+        transform: scale(0.90); /* Efecto de reducción al pasar el mouse */
+    }
+
+    .boton:active {
+        transform: scale(0.80); /* Efecto de botón presionado */
+    }
+</style>
+
+
+    <div class="respuesta">
+        <p><span style="color: #ff69b4;"><em>¡Genial!</em></span> <em>Prepárate para las sorpresas.</em></p>
+        
+        <img src="https://imgur.com/iIEBcr7.gif" alt="GIF divertido" class="gif" style="border-radius: 15px; width: 320px; height: 277px; display: block; margin: 20px auto;">
+        
+        <p class="cancion-mensaje">Reproduce esta canción para acompañar nuestros recuerdos:</p>
+       
+        <!-- Incrusta el iframe de Spotify -->
+        <iframe class="spotify-iframe" src="https://open.spotify.com/embed/track/0zeeAjrLX2mNacLeefRTGG?si=9b7bc678a00141bb" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+       
+       <p class="letras" style="font-family: Arial, sans-serif; font-size: 20px;"> 
+    <span class="musica">♪</span> Qué interesante<br>
+    <span class="musica">♫</span> Cómo el mundo gira así<br>
+    <span class="musica">♪</span> Cuando estoy aquí<br>
+    <span class="musica">♫</span> Pasando el tiempo junto a ti<br>
+    <span class="musica">♪</span> Qué interesante<br>
+    <span class="musica">♫</span> Que me escogiste a mí<br>
+    <span class="musica">♪</span> Para la vida compartir<br>
+    <span class="musica">♫</span> Sin ti no podría existir
+</p>
+        
+        <img src="https://imgur.com/BKuqRou.gif" alt="GIF divertido" class="gif"> <!-- GIF debajo del iframe -->
+        
+        <h2 style="color: #ff69b4; font-style: italic; text-align: center; margin-top: 20px; padding: 0 30px;">Mis momentos favoritos a tu lado</h2>
+      
+        <p style="font-size: 13px; color: #333; margin-top: 10px; font-family: 'Press Start 2P'; text-align: center;">
+    22 08 24: <span style="font-family: 'Press Start 2P'; font-weight: normal;">Nuestro día en Paso del Mango</span>
+</p>
+
+
+        <div style="position: relative;">
+            <img src="https://imgur.com/1e5BvpK.jpg" alt="Foto 1" class="foto">
+            <img src="https://imgur.com/023vrjQ.jpg" alt="Foto 2" class="foto">
+            <img src="https://imgur.com/hcHhjtz.jpg" alt="Foto 3" class="foto">
+            <img src="https://imgur.com/n3rE87q.jpg" alt="Foto 4" class="foto">
+            <img src="https://imgur.com/owLAx7I.jpg" alt="Foto 5" class="foto">
+            <img src="https://imgur.com/Qnsk649.jpg" alt="Foto 6" class="foto">
+            <img src="https://imgur.com/IpHuZrd.jpg" alt="Foto 7" class="foto">
+            <img src="https://imgur.com/fPSBnJ3.jpg" alt="Foto 8" class="foto">
+            <img src="https://imgur.com/1xKUht9.jpg" alt="Foto 9" class="foto">
+        </div>
+
+<p style="font-size: 13px; color: #333; margin-top: 10px; font-family: 'Press Start 2P', serif; text-align: center;">
+    02 09 24: <span style="font-weight: normal;">Nuestro día en la playa después de dormir juntos</span>
+</p>
+
+      <link rel="preload" href="https://imgur.com/DeGZyz0.png" as="image">
+      <link rel="preload" href="https://imgur.com/P18OwkI.png" as="image">
+      <link rel="preload" href="https://imgur.com/gYLx5C4.gif" as="image">
+      <link rel="preload" href="https://imgur.com/BaFnZKb.png" as="image">
+      <link rel="preload" href="https://imgur.com/4fVibPx.png" as="image">
+      
+
+
+<div style="position: relative;">
+    <img src="https://imgur.com/tySN03G.jpg" alt="Foto en la playa 1" class="foto">
+    <img src="https://imgur.com/NWLP0LM.jpg" alt="Foto en la playa 2" class="foto">
+</div>
+
+
+      <link rel="preload" href="https://imgur.com/2hYGjNv.gif" as="image">
+      <link rel="preload" href="https://imgur.com/ZHOkEHZ.png" as="image">
+
+
+<div style="text-align: center; margin-top: 20px;">  
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gothic-ultra-ot?styles=380" rel="stylesheet">
+
+    <img src="https://imgur.com/f0WpSEZ.png" alt="Icono" class="icon" onclick="openInputModal()" style="width: 90px; cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent; transition: transform 0.2s;">
+
+    <div class="modal" id="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center; z-index: 1000;">
+        <div class="modal-content" style="background-image: url('https://imgur.com/DeGZyz0.png'); background-size: contain; background-repeat: no-repeat; background-position: center; padding: 20px; border-radius: 5px; text-align: left; width: 400px; height: 600px; display: flex; flex-direction: column; position: relative;">
+            <span class="close" onclick="closeModal()" style="cursor: pointer; color: brown; font-size: 30px; position: absolute; top: 75px; right: 40px;">×</span>
+            <div style="padding-top: 130px; margin-left: 20px; margin-right: 10px; flex-grow: 1;">
+                <div id="inputSection" style="display: block;">
+                    <p style="font-weight: bold; font-family: 'UnifrakturMaguntia', cursive; font-size: 25px;">Un pequeño acertijo de amor:</p>
+                    <br>
+                    <p style="margin: 0; font-family: 'Gothic Ultra OT', sans-serif; font-size: 25px;">Nuestros días de cumpleaños<br>Mes que nos conocimos<br>Día y mes que nos hicimos novios</p>
+                    <div style="position: relative; width: 100%; margin-top: 10px;"> 
+                        <input type="text" id="dateInput" onkeyup="checkDate(event)" style="width: 100%; padding: 5px; color: #FFD700; border: none; height: 50px; background-color: transparent; padding-left: 40px; background-image: url('https://imgur.com/P18OwkI.png'); background-size: contain; background-repeat: no-repeat; background-position: left center; outline: none; font-family: 'Gothic Ultra OT', sans-serif; font-size: 25px;">
+                    </div>
+                    <div id="errorMessage" style="color: brown; display: none; font-size: 20px; margin-top: 10px;">
+                        <p style="font-family: 'Gothic Ultra OT', sans-serif;">Sigue intentando amorcito</p>
+                        <img src="https://i.imgur.com/6B00WPo.gif" alt="Error GIF" style="width: 80px; display: inline-block; margin-top: 1px; padding-left: 35px;">
+                    </div>
+                </div>
+                <p id="carta" style="display: none; margin-top: 10px; font-family: 'Gothic Ultra OT', sans-serif; font-size: 25px;">
+                    <span style="font-weight: bold; font-family: 'UnifrakturMaguntia', cursive; font-size: 25px;">A mi adorado Juan Pablo,</span><br><br><br> Desde el primer momento que te vi, supe que había encontrado a alguien especial. Tu sonrisa ilumina mis días y tu amor llena mi corazón de alegría. <br><br> Eres mi inspiración y mi amor eterno.<br><br>
+                    Con todo mi cariño,<br>
+                    Elkin 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const icon = document.querySelector('.icon');
+
+    // Función para agrandar y volver a tamaño original
+    function toggleScale(shouldScale) {
+        icon.style.transform = shouldScale ? 'scale(1.2)' : 'scale(1)';
+    }
+
+    // Agregar eventos para mouse y touch
+    icon.addEventListener('mouseenter', () => toggleScale(true));
+    icon.addEventListener('mouseleave', () => toggleScale(false));
+    icon.addEventListener('touchstart', () => toggleScale(true));
+    icon.addEventListener('touchend', () => toggleScale(false));
+
+    function openInputModal() {
+        openModal();
+        document.getElementById('dateInput').value = ''; // Limpiar el campo de entrada
+        document.getElementById('inputSection').style.display = 'block'; // Mostrar la sección de entrada
+        document.getElementById('carta').style.display = 'none'; // Asegurarse de que la carta esté oculta al abrir el modal
+        document.getElementById('errorMessage').style.display = 'none'; // Ocultar el mensaje de error al abrir
+    }
+
+    function checkDate(event) {
+        const date = document.getElementById('dateInput').value;
+        const errorMessage = document.getElementById('errorMessage');
+        
+        // Verificar si la tecla presionada fue Enter
+        if (event.key === "Enter") {
+            if (date === "0807062407") {
+                document.getElementById('inputSection').style.display = 'none'; // Ocultar la sección de entrada
+                document.getElementById('carta').style.display = 'block'; // Mostrar la carta
+                errorMessage.style.display = 'none'; // Asegurarse de que no se muestre el mensaje de error
+            } else {
+                errorMessage.style.display = 'block'; // Mostrar el mensaje de error
+            }
+        }
+    }
+
+    function openModal() {
+        document.getElementById('modal').style.display = 'flex';
+    }
+    
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+        document.getElementById('carta').style.display = 'none'; // Ocultar la carta al cerrar
+        document.getElementById('errorMessage').style.display = 'none'; // Ocultar el mensaje de error al cerrar
+    }
+</script>
+
+<br><br><br><br><br><br><br>
+
+<div class="container">
+    <div class="my-container">
+        <!-- Imagen del primer personaje (versión estática) -->
+        <img src="https://imgur.com/KU7PU8Z.png" alt="Personaje 1" class="my-personaje" onclick="startAnimation()" style="cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent;">
+        <!-- Burbuja de texto del primer personaje -->
+        <div class="my-bubble" id="myBubbleText">
+            <p id="myContador"></p>
+        </div>
+    </div>
+
+    <div class="my-container2">
+        <!-- Imagen del segundo personaje (versión estática) -->
+        <img class="my-personaje2" src="https://imgur.com/fXMYM4T.png" onclick="startAnimation2()" style="cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent;">
+        <!-- Burbuja de texto del segundo personaje -->
+        <div class="my-bubble2" id="myBubbleText2">
+            <p id="myMensajeBonito"></p>
+        </div>
+        <!-- Burbuja de pensamiento del segundo personaje -->
+        <div class="my-thought" id="myThoughtBubble2">
+            <p id="myMensajePensamiento"></p>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilo para centrar los contenedores de personajes */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    .my-container, .my-container2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Press Start 2P';
+    }
+
+    /* Estilo para la burbuja de texto del primer personaje */
+    .my-bubble {
+        display: none;
+        position: absolute;
+        width: 302px;
+        height: 150px;
+        background-image: url('https://imgur.com/ZHOkEHZ.png');
+        background-size: cover;
+        left: 40%;
+        transform: translateY(-20%);
+    }
+
+    .my-bubble p {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        right: 0;
+        color: gray;
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* Estilo para la imagen del primer personaje */
+    .my-personaje {
+        cursor: pointer;
+        width: 180px;
+        height: auto;
+    }
+
+    /* Estilo para la burbuja de texto del segundo personaje */
+    .my-bubble2 {
+        display: none;
+        position: absolute;
+        width: 208px;
+        height: 120px;
+        background-image: url('https://imgur.com/4fVibPx.png');
+        background-size: cover;
+        left: -90%;
+        transform: translateY(-10%);
+    }
+
+    .my-bubble2 p {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        right: 0;
+        color: gray;
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* Estilo para la burbuja de pensamiento (ahora en el mismo lugar que la burbuja de texto) */
+    .my-thought {
+        display: none;
+        position: absolute;
+        width: 208px;
+        height: 120px;
+        background-image: url('https://imgur.com/BaFnZKb.png'); /* Nueva imagen para burbuja de pensamiento */
+        background-size: cover;
+        left: -90%; /* Misma posición que la burbuja de texto */
+        transform: translateY(-10%); /* Misma posición que la burbuja de texto */
+    }
+
+    .my-thought p {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        right: 0;
+        color: gray;
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* Ajuste del tamaño para el segundo personaje */
+    .my-personaje2 {
+        cursor: pointer;
+        width: 160px;
+        height: auto;
+    }
+
+    /* Ajustes responsivos */
+    @media (max-width: 1500px) {
+        .container {
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .my-bubble, .my-bubble2, .my-thought {
+            top: -100px;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .container {
+            gap: 100px;
+        }
+    }
+</style>
+
+<script>
+    // Función para el primer personaje
+    function startAnimation() {
+        const personaje = document.querySelector(".my-personaje");
+        personaje.src = "https://imgur.com/2hYGjNv.gif"; // Cambiar a GIF animado
+        
+        setTimeout(showBubble, 500);
+    }
+
+    function showBubble() {
+        const bubble = document.getElementById("myBubbleText");
+        bubble.style.display = "block";
+
+        const startDate = new Date('2024-07-24T21:00:00');
+        const now = new Date();
+        const timeDiff = now - startDate;
+
+        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+        document.getElementById("myContador").innerHTML = `
+  ¡Según mis cálculos tenemos 
+  <span style="color: black;">${days}</span> días, 
+  <span style="color: black;">${hours}</span> horas, 
+  <span style="color: black;">${minutes}</span> minutos y 
+  <span style="color: black;">${seconds}</span> segundos juntos!`;
+
+        setTimeout(hideBubble, 10000);
+    }
+
+    function hideBubble() {
+        const bubble = document.getElementById("myBubbleText");
+        const personaje = document.querySelector(".my-personaje");
+        
+        bubble.style.display = "none"; 
+        personaje.src = "https://imgur.com/KU7PU8Z.png";
+    }
+
+    // Función para el segundo personaje
+function startAnimation2() {
+    const personaje = document.querySelector(".my-personaje2");
+    personaje.src = "https://imgur.com/gYLx5C4.gif"; // Cambiar a GIF animado
+    
+    setTimeout(() => {
+        // Ocultar ambas burbujas antes de mostrar una
+        hideBubble2();
+        hideThoughtBubble();
+
+        // Selecciona aleatoriamente entre mostrar burbuja de texto o de pensamiento
+        const mostrarPensamiento = Math.random() < 0.5;
+
+        if (mostrarPensamiento) {
+            showThoughtBubble();
+        } else {
+            showBubble2();
+        }
+    }, 500);
+
+    // Volver a la imagen estática después de 10 segundos
+    setTimeout(() => {
+        personaje.src = "https://imgur.com/fXMYM4T.png"; // Imagen estática
+    }, 10000);
+}
+
+
+    function showBubble2() {
+        const bubble = document.getElementById("myBubbleText2");
+        bubble.style.display = "block";
+
+        const mensajes = [
+            "Tu amor llena mi corazón.",
+"Cada día a tu lado es especial.",
+"Porq yo te amaré hasta el final.",
+"Eres mi persona favorita.",
+"Gracias por hacerme tan feliz.",
+"Tu sonrisa ilumina mi mundo.",
+"Vives en mis pensamientos.",
+"Eres mi razón de sonreír.",
+"Contigo, todo es mágico.",
+"Tu amor me inspira a ser mejor.",
+"Juntos, somos invencibles.",
+"Tu risa es mi melodía favorita.",
+"Tu eres el mayor de mis sueños.",
+"Tu amor es mi mayor tesoro.",
+"Contigo, el futuro es brillante.",
+"Eres mi sueño hecho realidad.",
+"Tu ternura me llena de paz.",
+"Cada abrazo tuyo es un refugio.",
+"Tu amor me llena de fuerzas.",
+"Tú eres mi lugar feliz.",
+"Cada día te amo mucho más.",
+"Eres la musa de mi inspiración.",
+"Iluminas todos mis días.",
+"Me llenas de creatividad.",
+"Tú puedes con todo juanpi.",
+"Buenos días, amor, amor, amor.",
+"No podrás escapar de mí.",
+"Estar donde tú estás me hace feliz"
+          
+        ];
+
+        const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
+        document.getElementById("myMensajeBonito").innerHTML = mensajeAleatorio;
+
+        setTimeout(hideBubble2, 10000);
+    }
+
+    function hideBubble2() {
+        const bubble = document.getElementById("myBubbleText2");
+        bubble.style.display = "none";
+    }
+
+    function showThoughtBubble() {
+        const bubble = document.getElementById("myThoughtBubble2");
+        bubble.style.display = "block";
+
+        const pensamientos = [
+            "¿Será que piensa en mí :(?",
+"Espero que note mi esfuerzo.",
+"Hoy es un buen día para soñar.",
+"A veces, la vida es tan bonita.",
+"¿Qué hará mi juanpi ahora?",
+"Quiero que sea muy feliz.",
+"Lo extraño demasiado hoy.",
+"Su aroma es tan delicioso.",
+"Encontré lo más bonito (él).",
+"Y si miro, son sus ojos.",
+"Poder besar sus labios >///<.",
+"Me gusta oirlo hablar.",
+"No podría vivir sin él <33."
+        ];
+
+        const pensamientoAleatorio = pensamientos[Math.floor(Math.random() * pensamientos.length)];
+        document.getElementById("myMensajePensamiento").innerHTML = pensamientoAleatorio;
+
+        setTimeout(hideThoughtBubble, 10000);
+    }
+
+    function hideThoughtBubble() {
+        const bubble = document.getElementById("myThoughtBubble2");
+        bubble.style.display = "none";
+    }
+</script>
+
+
+
+
+
+    
+
+        <p>Te amo mucho y espero que esta página te saque una sonrisa 😊</p>
+        <p class="agradecimiento">Gracias por ser parte de mi vida. Eres <span style="font-weight: bold; color: #ff1493;">invaluable</span> para mí.</p>
+
+      <br>
+
+      
+      
+<div style="margin-top: 40px;"> 
+    <h2 style="color: #ff69b4; padding: 0 20px;">¿Cómo calificarías esta página amorcito?</h2>
+    <div id="calificacion" style="font-size: 30px;">
+        <img class="estrella" data-valor="1" src="https://i.imgur.com/O8To2Ge.png" alt="estrella" width="50" height="50" style="cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent;">
+        <img class="estrella" data-valor="2" src="https://i.imgur.com/O8To2Ge.png" alt="estrella" width="50" height="50" style="cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent;">
+        <img class="estrella" data-valor="3" src="https://i.imgur.com/O8To2Ge.png" alt="estrella" width="50" height="50" style="cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent;">
+        <img class="estrella" data-valor="4" src="https://i.imgur.com/O8To2Ge.png" alt="estrella" width="50" height="50" style="cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent;">
+        <img class="estrella" data-valor="5" src="https://i.imgur.com/O8To2Ge.png" alt="estrella" width="50" height="50" style="cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent;">
+    </div>
+    <p id="mensaje-calificacion" style="font-size: 14px; color: #333; font-family: 'Press Start 2P'; margin-top: 10px; visibility: hidden;">Has calificado con X estrella(s)</p>
+</div>
+
+<script>
+    const estrellas = document.querySelectorAll('.estrella');
+    const mensajeCalificacion = document.getElementById('mensaje-calificacion');
+
+    estrellas.forEach(estrella => {
+        estrella.addEventListener('click', () => {
+            const valor = estrella.getAttribute('data-valor');
+            mensajeCalificacion.textContent = `Has calificado con ${valor} estrella(s)`;
+            mensajeCalificacion.style.visibility = 'visible'; // Mostrar el mensaje
+            
+            // Marcar estrellas según la calificación
+            estrellas.forEach(e => {
+                e.src = (e.getAttribute('data-valor') <= valor) ? 
+                    'https://i.imgur.com/8jl4z9t.png' : 
+                    'https://i.imgur.com/O8To2Ge.png'; // Cambiar color de estrella
+            });
+        });
+
+        estrella.addEventListener('mouseenter', () => agrandarEstrellas(estrella));
+        estrella.addEventListener('mouseleave', volverTamañoOriginal);
+        
+        // Para dispositivos táctiles
+        estrella.addEventListener('touchstart', () => agrandarEstrellas(estrella));
+        estrella.addEventListener('touchend', volverTamañoOriginal);
+    });
+
+    function agrandarEstrellas(estrella) {
+        const valor = estrella.getAttribute('data-valor');
+        estrellas.forEach(e => {
+            if (e.getAttribute('data-valor') <= valor) {
+                e.style.transform = 'scale(1.3)'; // Agrandar estrellas
+                e.style.transition = 'transform 0.2s'; // Animación suave
+            }
+        });
+    }
+
+    function volverTamañoOriginal() {
+        estrellas.forEach(e => {
+            e.style.transform = 'scale(1)'; // Volver a tamaño original
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<br><br>
+
+<style>
+  body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .footer {
+      background-image: url('https://imgur.com/vVXXfPf.png');
+      background-repeat: repeat-x;
+      background-size: 50px auto;
+      height: 50px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+  }
+</style>
+
+<div class="footer"></div>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="mensaje-triste" style="display: none;">
+        <p>TA BIEN 😢</p>
+      <img src="https://imgur.com/yEPErUz.png" alt="Imagen triste" class="imagen-triste">
+    </div>
+
+    <div class="confirmacion" style="display: none;">
+        <p><span>Solo era para que creyeras, de igual forma NO tienes elección amorcito 🥹 </span></p>
+      
+        <button class="boton" id="confirmar-si">Yes</button>
+    </div>
+
+    <script>
+        document.getElementById('boton-si').onclick = function() {
+            mostrarContenido();
+        };
+
+        document.getElementById('boton-no').onclick = function() {
+            document.getElementById('pregunta').style.display = 'none';
+            this.style.display = 'none';
+            document.getElementById('boton-si').style.display = 'none';
+            document.querySelector('.mensaje-triste').style.display = 'block';
+            document.querySelector('.imagen-triste').style.display = 'block';
+            document.querySelector('.confirmacion').style.display = 'block'; // Mostrar confirmación
+        };
+
+        document.getElementById('confirmar-si').onclick = function() {
+            mostrarContenido();
+document.querySelector('.mensaje-triste').style.display = 'none';
+            document.querySelector('.imagen-triste').style.display = 'none';
+            document.querySelector('.confirmacion').style.display = 'none';
+        };
+
+        function mostrarContenido() {
+            document.querySelector('.respuesta').style.display = 'block';
+            document.querySelector('.spotify-iframe').style.display = 'block'; // Mostrar el iframe de Spotify
+            document.querySelector('.cancion-mensaje').style.display = 'block'; // Mostrar mensaje de canción
+            for (let foto of document.querySelectorAll('.foto')) {
+                foto.style.display = 'block'; // Mostrar todas las fotos
+            }
+            document.querySelector('.confirmacion').style.display = 'none'; // Ocultar confirmación
+            document.querySelector('.mensaje-triste').style.display = 'none'; // Ocultar mensaje triste
+            document.getElementById('pregunta').style.display = 'none';
+            document.getElementById('boton-no').style.display = 'none';
+            document.getElementById('boton-si').style.display = 'none';
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
