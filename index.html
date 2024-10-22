@@ -102,31 +102,6 @@
         }
     </style>
 
-
-<style type="text/css">
-.grande { font-size: 60px; }
-</style>
-<script>
-// Escribir aqui el código Javascript
-</script>
-<style type="text/css">
-.grande { font-size: 60px; }
-</style>
-<script>
-// Escribir aqui el código Javascript
-</script>
-<style type="text/css">
-.grande { font-size: 60px; }
-</style>
-<script>
-// Escribir aqui el código Javascript
-</script>
-<style type="text/css">
-.grande { font-size: 60px; }
-</style>
-<script>
-// Escribir aqui el código Javascript
-</script>
 </head>
 <body>
   
@@ -217,8 +192,9 @@
             <img src="https://imgur.com/owLAx7I.jpg" alt="Foto 5" class="foto">
             <img src="https://imgur.com/Qnsk649.jpg" alt="Foto 6" class="foto">
             <img src="https://imgur.com/IpHuZrd.jpg" alt="Foto 7" class="foto">
-            <img src="image8.jpg" alt="Foto 8" class="foto">
+            <img src="images/image8.jpg" alt="Foto 8" class="foto">
             <img src="https://imgur.com/1xKUht9.jpg" alt="Foto 9" class="foto">
+            <img src="images/cat.gif" alt="GIF cat" style="width: auto; height: 120px; margin-top: -50px;">
         </div>
 
 <p style="font-size: 13px; color: #333; margin-top: 10px; font-family: 'Press Start 2P', serif; text-align: center;">
@@ -236,12 +212,27 @@
 <div style="position: relative;">
     <img src="https://imgur.com/tySN03G.jpg" alt="Foto en la playa 1" class="foto">
     <img src="https://imgur.com/NWLP0LM.jpg" alt="Foto en la playa 2" class="foto">
+    <img src="images/cat2.gif" alt="GIF cat2" style="width: auto; height: 150px; margin-top: -40px;"> 
 </div>
+      
+      <p style="font-size: 13px; color: #333; margin-top: 10px; font-family: 'Press Start 2P', serif; text-align: center;">
+    07-10 24: <span style="font-weight: normal;">Otros de nuestros inolvidables días juntos</span>
+</p>
+      <div style="position: relative;">
+    <img src="images/image14.jpg" alt="Otra foto 1" class="foto">
+    <img src="images/image15.jpg" alt="Otra foto 2" class="foto">
+    <img src="images/image16.jpg" alt="Otra foto 3" class="foto">
+    <img src="images/night.gif" alt="night" class="foto">  
+    <img src="images/cat3.gif" alt="GIF cat3" style="width: auto; height: 150px; margin-top: -40px;">
+</div>
+      
+     
 
 
       <link rel="preload" href="https://imgur.com/2hYGjNv.gif" as="image">
       <link rel="preload" href="https://imgur.com/ayK4o5N.png" as="image">
 
+    <br><br><br>
 
 <div style="text-align: center; margin-top: 20px;">  
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet">
@@ -488,7 +479,7 @@
         const now = new Date();
         const timeDiff = now - startDate;
 
-        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
