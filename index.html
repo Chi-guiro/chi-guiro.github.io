@@ -162,18 +162,30 @@
         <p class="cancion-mensaje">Reproduce esta canción para acompañar nuestros recuerdos:</p>
        
         <!-- Incrusta el iframe de Spotify -->
-        <iframe class="spotify-iframe" src="https://open.spotify.com/embed/track/0zeeAjrLX2mNacLeefRTGG?si=9b7bc678a00141bb" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-       
-       <p class="letras" style="font-family: Arial, sans-serif; font-size: 20px;"> 
-    <span class="musica">♪</span> Qué interesante<br>
-    <span class="musica">♫</span> Cómo el mundo gira así<br>
-    <span class="musica">♪</span> Cuando estoy aquí<br>
-    <span class="musica">♫</span> Pasando el tiempo junto a ti<br>
-    <span class="musica">♪</span> Qué interesante<br>
-    <span class="musica">♫</span> Que me escogiste a mí<br>
-    <span class="musica">♪</span> Para la vida compartir<br>
-    <span class="musica">♫</span> Sin ti no podría existir
-</p>
+      <div style="position: relative; z-index: 1; text-align: center;">
+    <iframe class="spotify-iframe" 
+            src="https://open.spotify.com/embed/track/0zeeAjrLX2mNacLeefRTGG?utm_source=oembed" 
+            style="width: 400px; height: 300px; background-color: transparent; border: none;" 
+            frameborder="0" 
+            allow="encrypted-media">
+    </iframe>
+    
+    <div style="display: inline-block; position: relative; margin-top: -70px;">
+        <p class="letras" style="font-family: Arial, sans-serif; font-size: 20px; margin: 0;"> 
+            <span class="musica">♪</span> Qué interesante<br>
+            <span class="musica">♫</span> Cómo el mundo gira así<br>
+            <span class="musica">♪</span> Cuando estoy aquí<br>
+            <span class="musica">♫</span> Pasando el tiempo junto a ti<br>
+            <span class="musica">♪</span> Qué interesante<br>
+            <span class="musica">♫</span> Que me escogiste a mí<br>
+            <span class="musica">♪</span> Para la vida compartir<br>
+            <span class="musica">♫</span> Sin ti no podría existir
+        </p>
+    </div>
+</div>
+
+
+
         
         <img src="https://imgur.com/BKuqRou.gif" alt="GIF divertido" class="gif"> <!-- GIF debajo del iframe -->
         
@@ -622,7 +634,7 @@ function startAnimation2() {
 
 <div id="unique-playlist-container" style="position: relative; margin-top: 20px; text-align: center;">
     <!-- Imagen con tamaño más grande -->
-    <img src="images/mp3.png" alt="Icono" class="unique-icon" onclick="openUniquePlaylistModal()" style="width: 250px; cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent; transition: transform 0.2s;">
+    <img src="images/mp3.png" alt="Icono" class="unique-icon" onclick="openUniquePlaylistModal()" style="width: 270px; cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent; transition: transform 0.2s;">
 
     <!-- Modal independiente -->
     <div class="unique-modal" id="unique-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center; z-index: 10000;">
